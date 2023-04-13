@@ -10,3 +10,8 @@ if (user && user.token) {
 } else {
   window.location.href = '/login';
 }
+
+/*
+   user's input is not sanitized or validated, an attacker could enter a malicious script as their name 
+   that would be executed by the victim's browser when the message is displayed
+*/
